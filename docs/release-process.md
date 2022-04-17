@@ -21,7 +21,7 @@ git push --follow-tags
 ```
 
 Create a release using github:
-* https://github.com/ceph/go-ceph/releases/new
+* https://github.com/amirhaa/go-ceph/releases/new
 * Select the tag you just pushed
 * Author release notes, noting:
   * New features

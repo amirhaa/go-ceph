@@ -12,8 +12,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/cutil"
-	"github.com/ceph/go-ceph/internal/retry"
+	"github.com/amirhaa/go-ceph/internal/cutil"
+	"github.com/amirhaa/go-ceph/internal/retry"
 )
 
 // SetXattr sets an extended attribute on the file at the supplied path.

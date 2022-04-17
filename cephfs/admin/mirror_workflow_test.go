@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ceph/go-ceph/cephfs"
-	"github.com/ceph/go-ceph/common/admin/manager"
+	"github.com/amirhaa/go-ceph/cephfs"
+	"github.com/amirhaa/go-ceph/common/admin/manager"
 )
 
 func mirrorConfig() string {

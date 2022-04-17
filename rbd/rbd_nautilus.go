@@ -13,9 +13,9 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/retry"
-	ts "github.com/ceph/go-ceph/internal/timespec"
-	"github.com/ceph/go-ceph/rados"
+	"github.com/amirhaa/go-ceph/internal/retry"
+	ts "github.com/amirhaa/go-ceph/internal/timespec"
+	"github.com/amirhaa/go-ceph/rados"
 )
 
 // GetImageNames returns the list of current RBD images.

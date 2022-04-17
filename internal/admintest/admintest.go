@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	ccom "github.com/ceph/go-ceph/common/commands"
-	"github.com/ceph/go-ceph/internal/commands"
-	"github.com/ceph/go-ceph/rados"
+	ccom "github.com/amirhaa/go-ceph/common/commands"
+	"github.com/amirhaa/go-ceph/internal/commands"
+	"github.com/amirhaa/go-ceph/rados"
 )
 
 var errTimedOut = errors.New("timed out waiting for connect")

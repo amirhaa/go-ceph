@@ -4,7 +4,7 @@
 package nfs
 
 import (
-	ccom "github.com/ceph/go-ceph/common/commands"
+	ccom "github.com/amirhaa/go-ceph/common/commands"
 )
 
 // Admin is used to administer ceph nfs features.

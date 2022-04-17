@@ -20,7 +20,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/log"
+	"github.com/amirhaa/go-ceph/internal/log"
 )
 
 type (

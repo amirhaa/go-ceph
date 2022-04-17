@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ceph/go-ceph/internal/commands"
-	"github.com/ceph/go-ceph/rbd"
+	"github.com/amirhaa/go-ceph/internal/commands"
+	"github.com/amirhaa/go-ceph/rbd"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -14,7 +14,7 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/cutil"
+	"github.com/amirhaa/go-ceph/internal/cutil"
 )
 
 const (

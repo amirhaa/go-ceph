@@ -16,8 +16,8 @@ static inline int wrap_rbd_update_watch(rbd_image_t image, uint64_t *handle,
 import "C"
 
 import (
-	"github.com/ceph/go-ceph/internal/callbacks"
-	"github.com/ceph/go-ceph/internal/retry"
+	"github.com/amirhaa/go-ceph/internal/callbacks"
+	"github.com/amirhaa/go-ceph/internal/retry"
 )
 
 // ImageWatcher is a representation of the rbd_image_watcher_t from librbd.h

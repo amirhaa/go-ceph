@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ceph/go-ceph/rbd"
+	"github.com/amirhaa/go-ceph/rbd"
 )
 
 func TestMirrorSnapshotScheduleStatus(t *testing.T) {

@@ -30,8 +30,8 @@ ENV PATH="${PATH}:/opt/go/bin"
 ENV GOROOT=/opt/go
 ENV GO111MODULE=on
 ENV GOPATH /go
-WORKDIR /go/src/github.com/ceph/go-ceph
-VOLUME /go/src/github.com/ceph/go-ceph
+WORKDIR /go/src/github.com/amirhaa/go-ceph
+VOLUME /go/src/github.com/amirhaa/go-ceph
 
 COPY micro-osd.sh /
 COPY entrypoint.sh /

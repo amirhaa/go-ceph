@@ -6,7 +6,7 @@
 package log
 
 import (
-	intLog "github.com/ceph/go-ceph/internal/log"
+	intLog "github.com/amirhaa/go-ceph/internal/log"
 )
 
 // SetWarnf sets the log.Printf compatible receiver for warning logs.

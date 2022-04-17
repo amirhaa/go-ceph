@@ -12,7 +12,7 @@ BUILD_TAGS=""
 RESULTS_DIR=/results
 CEPH_CONF=/tmp/ceph/ceph.conf
 MIRROR_STATE=/dev/null
-PKG_PREFIX=github.com/ceph/go-ceph
+PKG_PREFIX=github.com/amirhaa/go-ceph
 
 
 # Default env vars that are not currently changed by this script
