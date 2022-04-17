@@ -203,3 +203,34 @@ func (api *API) ModifyUser(ctx context.Context, user User) (User, error) {
 
 	return u, nil
 }
+
+// BucketListingSpec describes a request
+type BucketListingSpec struct {
+	UID          string `url:"uid"`
+	GenerateStat *bool  `url:"stats"`
+}
+
+func (api *API) ListUsersBuckets(ctx context.Context, uid string) ([]string, error) {
+	if uid == "" {
+		return nil, errMissingUserID
+	}
+
+	generateStat := false
+	listingSpec := BucketListingSpec{
+		UID:          uid,
+		GenerateStat: &generateStat,
+	}
+
+	body, err := api.call(ctx, http.MethodGet, "/bucket", valueToURLParams(listingSpec, []string{"UID", "GenerateStat"}))
+	if err != nil {
+		return nil, err
+	}
+
+	var s []string
+	err = json.Unmarshal(body, &s)
+	if err != nil {
+		return nil, fmt.Errorf("%s. %s. %w", unmarshalError, string(body), err)
+	}
+
+	return s, nil
+}
