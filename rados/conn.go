@@ -8,8 +8,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/cutil"
-	"github.com/ceph/go-ceph/internal/retry"
+	"github.com/amirhaa/go-ceph/internal/cutil"
+	"github.com/amirhaa/go-ceph/internal/retry"
 )
 
 var argvPlaceholder = "placeholder"

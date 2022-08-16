@@ -10,7 +10,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/retry"
+	"github.com/amirhaa/go-ceph/internal/retry"
 )
 
 // SnapNamespaceType indicates the namespace to which the snapshot belongs to.

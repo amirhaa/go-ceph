@@ -32,7 +32,7 @@ git push --follow-tags
 
 
 ## Create a release using github
-* https://github.com/ceph/go-ceph/releases/new
+* https://github.com/amirhaa/go-ceph/releases/new
 * Select the tag you just pushed
 * Add the release notes to the body of the release
 * Save the new release
@@ -53,7 +53,7 @@ created. No extra steps are currently required.
 ## Scheduling the next release
 
 Future releases are scheduled using the
-[milestones](https://github.com/ceph/go-ceph/milestones) feature on github. The
+[milestones](https://github.com/amirhaa/go-ceph/milestones) feature on github. The
 milestone may have features/issues/PRs associated with it, but it does not have
 to. The milestone must have a date associated with it.
 
@@ -163,7 +163,7 @@ the new release. Optionally mention some of the packages that have changes:
 I'm happy to announce another release of the go-ceph API library. This is a
 regular release following our every-two-months release cadence.
 
-https://github.com/ceph/go-ceph/releases/tag/v0.13.0
+https://github.com/amirhaa/go-ceph/releases/tag/v0.13.0
 
 Changes include additions to the rbd and rados packages. More details are
 available at the link above.

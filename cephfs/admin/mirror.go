@@ -1,8 +1,8 @@
 package admin
 
 import (
-	ccom "github.com/ceph/go-ceph/common/commands"
-	"github.com/ceph/go-ceph/internal/commands"
+	ccom "github.com/amirhaa/go-ceph/common/commands"
+	"github.com/amirhaa/go-ceph/internal/commands"
 )
 
 // SnapshotMirrorAdmin helps administer the snapshot mirroring features of

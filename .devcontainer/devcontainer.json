@@ -10,8 +10,8 @@
             "CEPH_VERSION": "octopus"
         }
     },
-    "workspaceMount": "source=${localWorkspaceFolder},target=/go/src/github.com/ceph/go-ceph,type=bind,consistency=cached",
-    "workspaceFolder": "/go/src/github.com/ceph/go-ceph",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/go/src/github.com/amirhaa/go-ceph,type=bind,consistency=cached",
+    "workspaceFolder": "/go/src/github.com/amirhaa/go-ceph",
     // Set *default* container specific settings.json values on container create.
     "settings": {
         "go.toolsManagement.checkForUpdates": "local",

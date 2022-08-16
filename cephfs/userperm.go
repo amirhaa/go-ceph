@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/log"
+	"github.com/amirhaa/go-ceph/internal/log"
 )
 
 // UserPerm types may be used to get or change the credentials used by the

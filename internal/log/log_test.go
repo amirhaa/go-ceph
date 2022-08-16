@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ceph/go-ceph/common/log"
-	intLog "github.com/ceph/go-ceph/internal/log"
+	"github.com/amirhaa/go-ceph/common/log"
+	intLog "github.com/amirhaa/go-ceph/internal/log"
 	"github.com/stretchr/testify/assert"
 )
 

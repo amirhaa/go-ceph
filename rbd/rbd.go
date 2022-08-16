@@ -16,10 +16,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/cutil"
-	"github.com/ceph/go-ceph/internal/retry"
-	ts "github.com/ceph/go-ceph/internal/timespec"
-	"github.com/ceph/go-ceph/rados"
+	"github.com/amirhaa/go-ceph/internal/cutil"
+	"github.com/amirhaa/go-ceph/internal/retry"
+	ts "github.com/amirhaa/go-ceph/internal/timespec"
+	"github.com/amirhaa/go-ceph/rados"
 )
 
 const (

@@ -10,8 +10,8 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/cutil"
-	ts "github.com/ceph/go-ceph/internal/timespec"
+	"github.com/amirhaa/go-ceph/internal/cutil"
+	ts "github.com/amirhaa/go-ceph/internal/timespec"
 )
 
 // Timespec is a public type for the internal C 'struct timespec'

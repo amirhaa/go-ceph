@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	tsuite "github.com/stretchr/testify/suite"
 
-	"github.com/ceph/go-ceph/internal/admintest"
-	"github.com/ceph/go-ceph/internal/commands"
-	"github.com/ceph/go-ceph/rados"
+	"github.com/amirhaa/go-ceph/internal/admintest"
+	"github.com/amirhaa/go-ceph/internal/commands"
+	"github.com/amirhaa/go-ceph/rados"
 )
 
 var radosConnector = admintest.NewConnector()

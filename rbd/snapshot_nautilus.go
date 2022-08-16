@@ -12,7 +12,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/internal/retry"
+	"github.com/amirhaa/go-ceph/internal/retry"
 )
 
 // GetParentInfo looks for the parent of the image and stores the pool, name

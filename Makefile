@@ -92,8 +92,8 @@ ifdef RESULTS_DIR
 endif
 
 ifneq ($(USE_GOCO),)
-	GO_CMD:=$(CONTAINER_CMD) run $(CONTAINER_OPTS) --rm $(GOCACHE_VOLUME) -v $(CURDIR):/go/src/github.com/ceph/go-ceph$(VOLUME_FLAGS) --entrypoint $(GO_CMD) $(CI_IMAGE_TAG)
-	GOFMT_CMD:=$(CONTAINER_CMD) run $(CONTAINER_OPTS) --rm $(GOCACHE_VOLUME) -v $(CURDIR):/go/src/github.com/ceph/go-ceph$(VOLUME_FLAGS) --entrypoint $(GOFMT_CMD) $(CI_IMAGE_TAG)
+	GO_CMD:=$(CONTAINER_CMD) run $(CONTAINER_OPTS) --rm $(GOCACHE_VOLUME) -v $(CURDIR):/go/src/github.com/amirhaa/go-ceph$(VOLUME_FLAGS) --entrypoint $(GO_CMD) $(CI_IMAGE_TAG)
+	GOFMT_CMD:=$(CONTAINER_CMD) run $(CONTAINER_OPTS) --rm $(GOCACHE_VOLUME) -v $(CURDIR):/go/src/github.com/amirhaa/go-ceph$(VOLUME_FLAGS) --entrypoint $(GOFMT_CMD) $(CI_IMAGE_TAG)
 endif
 
 # Assemble the various build args that will be passed container build command(s)
@@ -121,7 +121,7 @@ test:
 test-docker: test-container
 test-container: $(BUILDFILE) $(RESULTS_DIR)
 	$(CONTAINER_CMD) run $(CONTAINER_OPTS) --rm --hostname test_ceph_aio \
-		-v $(CURDIR):/go/src/github.com/ceph/go-ceph$(VOLUME_FLAGS) $(RESULTS_VOLUME) $(GOCACHE_VOLUME) \
+		-v $(CURDIR):/go/src/github.com/amirhaa/go-ceph$(VOLUME_FLAGS) $(RESULTS_VOLUME) $(GOCACHE_VOLUME) \
 		$(CI_IMAGE_TAG) $(ENTRYPOINT_ARGS)
 test-multi-container: $(BUILDFILE) $(RESULTS_DIR)
 	-$(MAKE) test-containers-kill
@@ -192,7 +192,7 @@ test-containers-test: $(BUILDFILE) $(TEST_CTR_A) $(TEST_CTR_B)
 		--net test_ceph_net \
 		-v test_ceph_a_data:/ceph_a \
 		-v test_ceph_b_data:/ceph_b \
-		-v $(CURDIR):/go/src/github.com/ceph/go-ceph$(VOLUME_FLAGS) \
+		-v $(CURDIR):/go/src/github.com/amirhaa/go-ceph$(VOLUME_FLAGS) \
 		$(RESULTS_VOLUME) $(GOCACHE_VOLUME) \
 		$(CI_IMAGE_TAG) \
 		--wait-for=/ceph_a/.ready:/ceph_b/.ready \

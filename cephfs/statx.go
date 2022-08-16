@@ -12,7 +12,7 @@ package cephfs
 import "C"
 
 import (
-	ts "github.com/ceph/go-ceph/internal/timespec"
+	ts "github.com/amirhaa/go-ceph/internal/timespec"
 )
 
 // Timespec is a public type for the internal C 'struct timespec'

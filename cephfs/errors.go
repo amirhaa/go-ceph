@@ -8,7 +8,7 @@ import "C"
 import (
 	"errors"
 
-	"github.com/ceph/go-ceph/internal/errutil"
+	"github.com/amirhaa/go-ceph/internal/errutil"
 )
 
 // cephFSError represents an error condition returned from the CephFS APIs.

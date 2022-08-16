@@ -12,7 +12,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/ceph/go-ceph/rados"
+	"github.com/amirhaa/go-ceph/rados"
 )
 
 // MirrorMode indicates the current mode of mirroring that is applied onto a
