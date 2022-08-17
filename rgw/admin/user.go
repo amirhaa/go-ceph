@@ -101,6 +101,7 @@ type UserKeySpec struct {
 // UserStat contains information about storage consumption by the ceph user
 type UserStat struct {
 	Size        *uint64 `json:"size"`
+	SizeActual  *uint64 `json:"size_actual"`
 	SizeRounded *uint64 `json:"size_rounded"`
 	NumObjects  *uint64 `json:"num_objects"`
 }
